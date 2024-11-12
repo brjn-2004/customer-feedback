@@ -1,0 +1,69 @@
+.admin-container {
+    text-align: center;
+    padding: 20px;
+   background-image: url(min2.jpg); /*  background image for the page */
+    min-height: 100vh; /* Full height for the container */
+}
+.admin-container h2{
+    color: black;
+}
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center the cards horizontally */
+    max-height: 70vh; /* Adjust based on your layout */
+    overflow-y: auto; /* Keep scrolling for overflowing content */
+    scrollbar-width: thin; /* Firefox scrollbar styling */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.reviews-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reviews-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Customize scrollbar color */
+    border-radius: 4px;
+}
+
+.review-card {
+    border: 1px solid #ccc;
+    margin: 10px; /* Space around cards */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    background: #ffffff; /* White background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+    width: 280px; /* Fixed width for cards */
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row with margin */
+    max-width: 300px; /* Maximum width for cards */
+    display: flex; /* Flexbox for content alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+}
+
+.review-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.product-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px; /* Space below image */
+}
+
+.remove-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.remove-button:hover {
+    background-color: rgb(255, 255, 255); /* Darker red on hover */
+    color: black;
+}

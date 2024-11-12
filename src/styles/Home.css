@@ -1,0 +1,77 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+    background-image: url(min3.jpg);
+    color: #333; /* Dark text */
+    font-family: 'Arial', sans-serif; /* Font family */
+    position: relative; /* To position children absolutely */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between user greeting and logout button */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding around header */
+    position: absolute; /* Positioning */
+    top: 0; /* Align to top */
+}
+
+.user-greeting {
+    margin-left: 20px; /* Margin for the greeting text */
+    color: #000000; /* Blue color for greeting */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logout-button {
+    background-color: #1b01aa; /* Red color for logout */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+.home-container h1 {
+    margin-top: 80px; /* Space below the header */
+    text-align: center; /* Center the title */
+    color: #000000; /* Blue color for title */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    margin-top: 30px; /* Space above the cards */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background-color: #ffffff; /* White background */
+    border: 2px solid #000000; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center; /* Center text in card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.card h2 {
+    margin: 0; /* Remove default margin */
+    color: #007BFF; /* Blue color for card text */
+}
